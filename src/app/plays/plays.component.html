@@ -1,0 +1,35 @@
+<body>
+<br>
+<div class="container">
+    <div class="card text-white bg-black mb-3">
+        <div class="card-body">
+            <h5 class="card-title">List of rockets</h5> 
+            <!--A rounded button to add a play-->
+            <button class="btn btn-primary" routerLink="/addplay">Add play</button>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Play Name</th>
+                        <th scope="col">Play Description</th>
+                        <th scope="col">Ticket Number</th>
+                        <th scope="col">Ticket Price</th>
+                        <th scope="col">Play Date</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let play of plays">
+                        <td>{{play.titlePlay}}</td>
+                        <td>{{play.biographyPlay}}</td>
+                        <td>{{play.ticketsNumPlay}}</td>
+                        <td>{{play.pricePlay}}</td>
+                        <td>{{play.datePlay | date:'dd/MM/yyyy'}}</td>
+                        <td><button class="btn btn-danger" (click)="deletePlay(play)">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>

@@ -1,0 +1,16 @@
+.card{
+    border-radius: 20px;
+  }
+body{
+    background: #11171a;
+}
+button{
+    background: #11171a;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.5s;
+}

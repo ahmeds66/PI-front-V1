@@ -1,0 +1,40 @@
+<div class="bkg">
+    <br>
+    <div class="container " style="max-width:50rem;align-self: center">
+        <form class="card text-white bg-black mb-4" style="align-items: center">
+            <h1>Add Play</h1>
+            <br>
+            <div class="col-sm-2 col-md-2 col-lg-9">
+                <label>play Name</label>
+                <input type="text" [(ngModel)]="newplay.titlePlay" name="titlePlay" class="form-control">
+            </div>
+            <br>
+            <div class="col-sm-2 col-md-2 col-lg-9">
+                <label>biography</label>
+                <input type="text" [(ngModel)]="newplay.biographyPlay" name="biographyPlay" class="form-control">
+                <br>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-9">
+                <label>Tickets</label>
+                <input type="text" [(ngModel)]="newplay.ticketsNumPlay" name="ticketsNumPlay" class="form-control">
+            </div>
+            <br>
+            <div class="col-sm-2 col-md-2 col-lg-9">
+                <label>Date</label>
+                <input type="date" [(ngModel)]="newplay.datePlay" name="datePlay" class="form-control">
+            </div>
+            <br>
+            <div class="col-sm-2 col-md-2 col-lg-9">
+                <label>Price</label>
+                <input type="text" [(ngModel)]="newplay.pricePlay" name="pricePlay" class="form-control">
+            </div>
+            <br>
+            <div class="mt-2">
+                <button type="submit" class="btn btn-primary" routerLink="/plays" (click)="addPlay()">Add
+                    play</button>
+            </div>
+            <br>
+        </form>
+        <br>
+    </div>
+</div>
